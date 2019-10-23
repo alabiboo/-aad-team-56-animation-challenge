@@ -7,21 +7,25 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/helloImg"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/ic_hello"
-        android:layout_gravity="bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/btnAnime"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Anime" />
+        <TextView
+            android:id="@+id/desText"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded"
+            android:text="We are AAD TEAM 56"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btnAnime2"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anim2" />
 
 </RelativeLayout>
 </LinearLayout>
