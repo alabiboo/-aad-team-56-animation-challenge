@@ -24,8 +24,7 @@ class HelloActivity : AppCompatActivity() {
         ball = findViewById<ImageView>(R.id.helloImg)
         desc = findViewById<TextView>(R.id.desText)
         val btnAnime : Button = findViewById<Button>(R.id.btnAnime)
-        val btnAnime2 : Button = findViewById<Button>(R.id.btnAnime2)
-        val btnAnime3 : Button = findViewById<Button>(R.id.btnAnime3)
+
 
         btnAnime.setOnClickListener {
             if (ball != null) {

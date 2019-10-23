@@ -44,39 +44,7 @@
         android:layout_height="wrap_content"
         android:text="Anim1" />
 
-        <Button
-            android:id="@+id/btnAnime2"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Anim2" />
 
-            <Button
-                android:id="@+id/btnAnime3"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="bottom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Anim3" />
-
-
-            <Button
-                android:id="@+id/btnAnime4"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="bottom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Anim4" />
-
-
-            <Button
-                android:id="@+id/btnAnime5"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="bottom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Anim5" />
         </LinearLayout>
 
 </RelativeLayout>
