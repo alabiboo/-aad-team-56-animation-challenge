@@ -1,86 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/profile_card"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_item"
+        android:orientation="horizontal"
+        >
 
-    <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="8dp"
-            android:onClick="rotateAnimation"
-            android:text="@string/rotate"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp" />
-
-    <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:onClick="scaleAnimation"
-            android:text="@string/scale"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button3"/>
-
-    <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginBottom="8dp"
-            android:onClick="translateAnimation"
-            android:text="@string/translate"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button4"
-            android:layout_marginLeft="4dp" />
-
-    <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image1"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/image1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
             android:onClick="fadeAnimation"
-            android:text="@string/fade"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button5"
-            android:layout_marginRight="8dp" />
 
-    <ImageView
-            android:id="@+id/targetImage"
-            android:layout_width="192dp"
-            android:layout_height="141dp"
-            android:layout_marginStart="8dp"
+            />
+
+        <LinearLayout
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.26"
-            app:srcCompat="@drawable/steering_wheel"/>
-    <Button
-            android:text="Set From XML"
-            android:layout_width="189dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/button3"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintHorizontal_bias="0.0" android:onClick="setFromXML"/>
-    <Button
-            android:text="Set From Code"
-            android:layout_width="189dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button2"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/button6"
-            app:layout_constraintStart_toEndOf="@+id/button" android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:onClick="setFromCode"/>
+            android:layout_marginStart="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="H. Emmmanuel EDORH"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web and Mobile Developer"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AAD-TEAM-56"
+                />
+
+            <Button
+                android:id="@+id/btn_view_more"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:text="View more"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

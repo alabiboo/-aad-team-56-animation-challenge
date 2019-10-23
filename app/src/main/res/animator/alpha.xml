@@ -7,4 +7,5 @@
         android:valueTo="0.0"
         android:valueType="floatType"
         android:repeatMode="reverse"
-        android:repeatCount="1"/>
+        android:repeatCount="1"
+    />
