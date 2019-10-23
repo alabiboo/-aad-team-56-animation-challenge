@@ -19,6 +19,7 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".AlbActivity"/>
         <activity android:name=".AnimationEmActivity"/>
+        <activity android:name=".PActivity"/>
     </application>
 
 </manifest>
