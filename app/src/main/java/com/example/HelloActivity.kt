@@ -33,19 +33,9 @@ class HelloActivity : AppCompatActivity() {
                 rotateb()
             }
 
-
     }
-        btnAnime2.setOnClickListener {
-            if (desc != null) {
-                desc!!.visibility = View.VISIBLE
-                combin_anims()
-            }
-        }
 
-        btnAnime3.setOnClickListener {
-            val intent = Intent(this, AlbActivity::class.java)
-            startActivity(intent)
-        }
+
     }
 
 
