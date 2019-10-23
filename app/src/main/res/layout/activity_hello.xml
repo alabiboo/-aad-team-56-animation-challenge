@@ -34,49 +34,54 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:weightSum="5"
             android:layout_alignParentBottom="true"
             android:layout_gravity="bottom">
 
     <Button
         android:id="@+id/btnAnime"
-
+        android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Anim1" />
+        android:text="1" />
 
         <Button
             android:id="@+id/btnAnime2"
             android:layout_alignParentBottom="true"
             android:layout_gravity="bottom"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Anim2" />
+            android:text="2" />
 
             <Button
                 android:id="@+id/btnAnime3"
+                android:layout_weight="1"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="bottom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Anim3" />
+                android:text="3" />
 
 
             <Button
                 android:id="@+id/btnAnime4"
+                android:layout_weight="1"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="bottom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Anim4" />
+                android:text="4" />
 
 
             <Button
                 android:id="@+id/btnAnime5"
+                android:layout_weight="1"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="bottom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Anim5" />
+                android:text="5" />
         </LinearLayout>
 
 </RelativeLayout>

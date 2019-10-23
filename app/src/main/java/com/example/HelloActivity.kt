@@ -26,6 +26,7 @@ class HelloActivity : AppCompatActivity() {
         val btnAnime : Button = findViewById<Button>(R.id.btnAnime)
         val btnAnime2 : Button = findViewById<Button>(R.id.btnAnime2)
         val btnAnime3 : Button = findViewById<Button>(R.id.btnAnime3)
+        val btnAnime4 : Button = findViewById<Button>(R.id.btnAnime4)
 
         btnAnime.setOnClickListener {
             if (ball != null) {
@@ -44,6 +45,11 @@ class HelloActivity : AppCompatActivity() {
 
         btnAnime3.setOnClickListener {
             val intent = Intent(this, AlbActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnAnime4.setOnClickListener {
+            val intent = Intent(this, AnimationEmActivity::class.java)
             startActivity(intent)
         }
     }
