@@ -1,11 +1,13 @@
 package com.example
 
+import android.os.Build
 import android.os.Bundle
 import android.transition.Scene
 import android.transition.Transition
 import android.transition.TransitionInflater
 import android.transition.TransitionManager
 import android.view.View
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_alb.*
 
@@ -17,9 +19,10 @@ class AlbActivity : AppCompatActivity() {
     private lateinit var transition: Transition
 
 
+    @RequiresApi(Build.VERSION_CODES.KITKAT)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_alb)
 
 
 
@@ -39,6 +42,7 @@ class AlbActivity : AppCompatActivity() {
 
 
 
+    @RequiresApi(Build.VERSION_CODES.KITKAT)
     fun onClick(view: View) {
 
         // Step 3: Call TransitionManager.go() to run animation
