@@ -9,19 +9,75 @@
 
     <ImageView
         android:id="@+id/helloImg"
-        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
         android:src="@drawable/ic_hello"
         android:layout_gravity="bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+        <TextView
+            android:id="@+id/desText"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded"
+            android:text="We are AAD TEAM 56"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/helloImg"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom">
+
     <Button
         android:id="@+id/btnAnime"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Anime" />
+        android:text="Anim1" />
+
+        <Button
+            android:id="@+id/btnAnime2"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anim2" />
+
+            <Button
+                android:id="@+id/btnAnime3"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anim3" />
+
+
+            <Button
+                android:id="@+id/btnAnime4"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anim4" />
+
+
+            <Button
+                android:id="@+id/btnAnime5"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anim5" />
+        </LinearLayout>
 
 </RelativeLayout>
 </LinearLayout>
